@@ -13,7 +13,8 @@ which copy ran.
 |---|---|
 | `dw-create-pr`, `ship-create-pr` | `open-pr` |
 | `dw-merge`, `ship-merge` | `land-pr` |
-| `reviewing-finish` | `review-work` |
+| `reviewing-finish`, `review-work` | `open-pr` |
+| `take-issue`, `plan-work` | `do-task` |
 | `doc-gen-readme` | `gen-readme` |
 | `doc-review-readme` | `review-readme` |
 | `auditing-artifacts` | `reviewing-artifacts` |
@@ -22,8 +23,8 @@ which copy ran.
 
 ## Shadowing: delete the fork, the placed one is the same job
 
-A local copy of any name this plugin ships now: `file-issue`, `take-issue`, `do-task`,
-`review-work`, `open-pr`, `land-pr`, `plan-work`, `gen-readme`, `review-readme`,
+A local copy of any name this plugin ships now: `file-issue`, `do-task`, `open-pr`,
+`land-pr`, `gen-readme`, `review-readme`,
 `reviewing-artifacts`, `reviewing-phrasing`, `reviewing-typography`,
 `reporting-outcomes`, `remove-stale-files`.
 
@@ -34,7 +35,7 @@ Delete only after saying so. There is no new name to type.
 | Fork | What it leaves behind |
 |---|---|
 | `dw-story`, `dw-plan`, `dw-tasks`, `dw-implement` | nothing here; the build half is out of scope |
-| `dw-review-story`, `dw-review-tasks`, `dw-review-implement`, `dw-review-pr` | nothing; a diff review plus `review-work` cover it |
+| `dw-review-story`, `dw-review-tasks`, `dw-review-implement`, `dw-review-pr` | nothing; a diff review plus `open-pr` cover it |
 | `dw-test-design` | the runner's `qa-*` half, placed separately |
 | `qw-drift` | **nothing at all.** The project's drift detection ends here |
 
