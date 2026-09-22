@@ -66,7 +66,7 @@ person and an agent can read.
 |---|---|
 | [gen-readme](plugins/agent-workflows/skills/gen-readme/SKILL.md) | Writes a README from the code, with one rendered diagram per key point |
 | [review-readme](plugins/agent-workflows/skills/review-readme/SKILL.md) | Gates a README on three counts: useful to a newcomer, true to the code, and readable |
-| [reviewing-artifacts](plugins/agent-workflows/skills/reviewing-artifacts/SKILL.md) | Gates the files an agent reads: skills, commands, rules. Recommends cutting one that duplicates another |
+| [skill-structure](plugins/agent-workflows/skills/skill-structure/SKILL.md) | Writes a skill as one description paragraph, a header and a list of steps |
 | [reviewing-phrasing](plugins/agent-workflows/skills/reviewing-phrasing/SKILL.md) | Reviews the words of a human-read document, greping the mechanical tells first |
 | [reviewing-typography](plugins/agent-workflows/skills/reviewing-typography/SKILL.md) | Reviews how such a document looks, the way a UI designer would |
 | [reporting-outcomes](plugins/agent-workflows/skills/reporting-outcomes/SKILL.md) | Opens every report with the verdict and ends it with one next step |
@@ -91,7 +91,7 @@ something is only a previous session's situation.
 
 ## Contributing
 
-`reviewing-artifacts` gates a skill, `reviewing-phrasing` and `reviewing-typography` gate a
+`skill-structure` shapes a skill, `reviewing-phrasing` and `reviewing-typography` gate a
 document. By convention both are run on this repo's own files before they land; nothing
 enforces it. Diagrams are SVG sources committed alongside PNGs rendered by an explicit
 command, `rsvg-convert` by default:
