@@ -2,7 +2,7 @@
 
 A Claude Code plugin that carries one piece of work from a remark in a session to merged:
 file the issue, claim it, do the work, judge what state it actually reached, open the
-change request, land it. Six skills make that spine, each stopping for a person. Eight more
+change request, land it. Six skills make that spine, each stopping for a person. Nine more
 plan it, gate what it produces, and clean up after it. Nothing auto-runs the next.
 
 ## Requirements
@@ -85,6 +85,7 @@ and closes it. No branch is cut, and no change request is ever opened. That is a
 | [reviewing-typography](plugins/agent-workflows/skills/reviewing-typography/SKILL.md) | Reviews how such a document looks, the way a UI designer would |
 | [reporting-outcomes](plugins/agent-workflows/skills/reporting-outcomes/SKILL.md) | Holds every reply to two lines and a question: the verdict, the next step, the offer |
 | [remove-stale-files](plugins/agent-workflows/skills/remove-stale-files/SKILL.md) | Deletes what earlier versions of this plugin left behind, and the forks that shadow it |
+| [article-structure-study](plugins/agent-workflows/skills/article-structure-study/SKILL.md) | Studies an article's structure by fixed steps: a Markdown file with the title and a list of sections, each clause's main character bolded and its action in a code span |
 
 ## This repo is its own marketplace
 
@@ -110,7 +111,7 @@ command, `rsvg-convert` by default:
 
     rsvg-convert -z 2 docs/diagrams/<name>.svg -o docs/diagrams/png/<name>.png
 
-Renaming a skill leaves citations behind in the other thirteen, in both manifests and in
+Renaming a skill leaves citations behind in the other fourteen, in both manifests and in
 this file. Check them before opening a change request:
 
     scripts/check-names.sh
