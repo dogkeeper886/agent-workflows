@@ -17,7 +17,7 @@ which copy ran.
 | `take-issue`, `plan-work` | `do-task` |
 | `doc-gen-readme` | `gen-readme` |
 | `doc-review-readme` | `review-readme` |
-| `auditing-artifacts` | `reviewing-artifacts` |
+| `auditing-artifacts`, `reviewing-artifacts` | `skill-structure` |
 | `auditing-readme` | `reviewing-phrasing`, `reviewing-typography` |
 | `qw-plan`, `qw-cases`, `qw-review-plan`, `qw-review-cases` | `qa-*` in `agent-workflows-runner`, **placed separately** |
 
@@ -25,7 +25,7 @@ which copy ran.
 
 A local copy of any name this plugin ships now: `file-issue`, `do-task`, `open-pr`,
 `land-pr`, `gen-readme`, `review-readme`,
-`reviewing-artifacts`, `reviewing-phrasing`, `reviewing-typography`,
+`skill-structure`, `reviewing-phrasing`, `reviewing-typography`,
 `reporting-outcomes`, `remove-stale-files`.
 
 ## Retired: nothing replaces these

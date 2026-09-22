@@ -8,9 +8,11 @@ description: >-
 ---
 
 Open a pull request:
-1. Read the issue and the session log it links, before the diff.
-2. Review the diff against what the issue asked, and find what the change left behind.
+1. Read the issue and the session log it links.
+2. Review the work against what the issue asked, and find what the change left behind.
 3. When the review fails, stop and report with the `reporting-outcomes` skill.
-4. Write the pull request as an SCQA intro, then the answer as a list of topic: comment.
-5. Open the pull request.
-6. Print the pull request's intro in the session.
+4. Write the pull request's intro as an SCQA opening structure: {context the reader already agrees with}. {the change that disrupts it}. {the issue it raises, stated or as its consequence}. {what resolves it}.
+5. Follow the intro with the answer's details as a list of topic: comment.
+6. Commit the work and push the branch.
+7. Open the pull request.
+8. Print the pull request's intro in the session.
