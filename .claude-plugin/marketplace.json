@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "agent-workflows",
-      "description": "Carries one piece of work from a remark in a session to merged: file the issue, claim it, do it, judge whether it is actually done, open the change request, land it. Every step stops for a person, and the same gates cover READMEs and the files an agent reads. Needs `gh` or `glab`, authenticated.",
+      "description": "Carries one piece of work from a remark in a session to merged: file the issue, do the work, review it and open the pull request, land it. Every step stops for a person, and the same gates cover READMEs and the files an agent reads. Needs `gh` or `glab`, authenticated.",
       "source": "./plugins/agent-workflows",
       "category": "workflow",
       "homepage": "https://github.com/dogkeeper886/agent-workflows"
