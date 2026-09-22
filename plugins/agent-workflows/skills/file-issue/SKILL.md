@@ -10,7 +10,7 @@ description: >-
 ---
 
 File an issue:
-1. Open the issue with an intro that follows the SCQA framework: situation, complication, question, answer.
+1. Open the issue with one paragraph: {situation}. {complication}. {question}. {answer}.
 2. When the session log holds a secret or private info, stop and ask the user.
 3. Copy the session log raw into .sessions/ and link it from the intro, so the next agent reads the context behind it.
 4. Show the user the intro and the link to the issue.

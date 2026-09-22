@@ -10,7 +10,7 @@ description: >-
 
 Review a README:
 1. Derive the key points from the code, not from the README, and number them.
-2. Check the README opens with an intro that follows the SCQA framework: situation, complication, question, answer, without the labels.
+2. Check the README opens with one paragraph: {situation}. {complication}. {question}. {answer}.
 3. Check the key points follow the intro, the first one leading.
 4. Check the README covers every key point.
 5. Check each key point has a committed PNG with its SVG source beside it.

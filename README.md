@@ -2,14 +2,12 @@
 
 You work with an agent in a Claude Code session, and a remark there — *the parser drops
 trailing commas* — becomes work that should end merged. Left to its own ideas, the agent
-rewrites the request in its own words, grades its own work done, and reads *"merge it"* as
-approval. The reasoning behind the request stays in a session nobody reads again.
-
-How does one piece of work get from a remark to merged without drifting from what was asked?
-This plugin carries it with four skills — `file-issue`, `do-task`, `open-pr`, `land-pr` —
-each stopping for a person, and nothing auto-runs the next. Eight more report on it, gate
-what it produces, and clean up after it. Each skill is a short description and a numbered
-list of steps, short enough for a person to review.
+rewrites the request in its own words, grades its own work done and reads *"merge it"* as
+approval, while the reasoning stays in a session nobody reads again. One piece of work has to
+get from a remark to merged without drifting from what was asked. This plugin carries it with
+four skills — `file-issue`, `do-task`, `open-pr` and `land-pr`, each stopping for a person —
+and eight more that report on it, gate what it produces and clean up after it, each a short
+list of steps a person can review.
 
 ## Requirements
 
