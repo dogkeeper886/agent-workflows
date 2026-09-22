@@ -11,7 +11,7 @@ Open a pull request:
 1. Read the issue and the session log it links, before the diff.
 2. Review the diff against what the issue asked, and find what the change left behind.
 3. When the review fails, stop and report with the `reporting-outcomes` skill.
-4. Write the pull request with an intro that follows the SCQA framework: situation, complication, question, answer.
+4. Write the pull request's intro as one paragraph: {situation}. {complication}. {question}. {answer}.
 5. Follow the intro with the answer's details as a list of topic: comment.
 6. Open the pull request.
 7. Print the pull request's intro in the session.
