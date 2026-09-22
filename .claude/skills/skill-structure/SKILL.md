@@ -10,7 +10,7 @@ description: >-
 
 Skill structure:
 1. The description is the only frontmatter field.
-2. The description follows SCQA: situation, complication, question, answer.
+2. The description follows the SCQA framework: situation, complication, question, answer.
 3. The instruction area holds only a header and a list.
 4. The header holds the skill's purpose.
 5. The list holds the steps, one action per step.
