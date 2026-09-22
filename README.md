@@ -41,7 +41,7 @@ agent that picks it up reads the reasoning, not only the request.
 closes the issue when the merge did not.
 
 **`open-pr` is the gate.** The agent that wrote the work does not grade it done: `open-pr`
-reviews the diff against what the issue asked, and a failed review stops and reports
+reviews the work against what the issue asked, and a failed review stops and reports
 instead of opening the pull request. `land-pr` then asks whether you reviewed and tested
 the pull request at its head, and merges only that commit.
 
@@ -57,7 +57,7 @@ person and an agent can read.
 |---|---|
 | [file-issue](plugins/agent-workflows/skills/file-issue/SKILL.md) | Files an issue with an intro that follows the SCQA framework and links the session log behind it, asking first when the log holds a secret |
 | [do-task](plugins/agent-workflows/skills/do-task/SKILL.md) | Reads the issue, its comments and its session log whole, then does the work |
-| [open-pr](plugins/agent-workflows/skills/open-pr/SKILL.md) | Reviews the diff against what the issue asked, and opens the pull request only when the review passes |
+| [open-pr](plugins/agent-workflows/skills/open-pr/SKILL.md) | Reviews the work against what the issue asked, and opens the pull request only when the review passes |
 | [land-pr](plugins/agent-workflows/skills/land-pr/SKILL.md) | Merges pinned to the head a person says they reviewed and tested, closes the issue and deletes the branch |
 
 ### Around it

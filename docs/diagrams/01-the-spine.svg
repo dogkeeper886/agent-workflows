@@ -34,7 +34,7 @@
     <text x="120" y="170">session log in .sessions/</text>
     <text x="360" y="154">reads the issue and its log,</text>
     <text x="360" y="170">then does the work</text>
-    <text x="600" y="154">reviews the diff against</text>
+    <text x="600" y="154">reviews the work against</text>
     <text x="600" y="170">what the issue asked</text>
     <text x="840" y="154">merges on your yes, pinned</text>
     <text x="840" y="170">to the head you reviewed</text>
