@@ -8,6 +8,7 @@ description: >-
   own ideas.
 ---
 
+Article structure study:
 1. Create a Markdown file.
 2. The Markdown file holds a header and a list.
 3. The header holds the article title.
