@@ -1,18 +1,18 @@
 ---
 description: >-
-  An agent reviews the words of a document by its own ideas. The agent
-  applies one register to every file. A markdown file declares no contract,
-  and the same wording is right in a talk track and wrong in a test case. The
-  agent cannot hear its own register, so it passes its own tells. This skill
-  asks the agent to review the words of a document by the steps below, not by
-  its own ideas.
+  An agent reviews a document's phrasing by its own ideas. The agent reads past
+  its own verbal tics, filler words, loose phrases and negative sentences. The
+  loose words bury each sentence's main character. The buried main character
+  costs the reader a second read. This skill asks the agent to review a
+  document's phrasing by the steps below, not by its own ideas.
 ---
 
-Review the words of a document:
-1. Name the document's kind, its reader and the action it enables, and ask when the file does not say.
-2. Read the matching file in `reference/` when the kind has one.
-3. Run `"$CLAUDE_PLUGIN_ROOT"/skills/reviewing-phrasing/check-prose.sh <file>`, or the `check-prose.sh` beside this file outside a plugin.
-4. Count a hit as a finding only when it costs this reader.
-5. Read for what the script cannot catch: the "isn't A, it's B" frame, triads, restatement, vague claims and uniform sentence length.
-6. Judge purpose first, then structure, then accuracy, then sentences.
-7. Report with the `reporting-outcomes` skill, quoting the words at fault and saying which findings came from the script.
+Phrasing review:
+1. Create a Markdown file in the scratchpad.
+2. The Markdown file holds a header and a list.
+3. The header holds the document title.
+4. The list holds the document sentences.
+5. Strike through each verbal tic and filler word.
+6. Strike through each sentence whose main character does not come first, and put the rewrite after it.
+7. Strike through each negative sentence, and put its affirmative rewrite after it.
+8. Strike through each phrase that one exact word can replace, and put the word after it.
