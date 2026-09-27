@@ -3,8 +3,7 @@ description: >-
   An agent reports work by its own ideas. The agent narrates progress,
   findings and reasoning before it gives the verdict. The narration buries the
   verdict. The buried verdict makes the reader mine the report for what to do
-  next. This skill asks the agent to report work by the steps below, not by
-  its own ideas.
+  next. This skill asks the agent to report work by the steps below.
 ---
 
 Report an outcome:

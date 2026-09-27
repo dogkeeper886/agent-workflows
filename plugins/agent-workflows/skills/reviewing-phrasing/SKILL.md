@@ -4,7 +4,7 @@ description: >-
   its own verbal tics, filler words, loose phrases and negative sentences. The
   loose words bury each sentence's main character. The buried main character
   costs the reader a second read. This skill asks the agent to review a
-  document's phrasing by the steps below, not by its own ideas.
+  document's phrasing by the steps below.
 ---
 
 Phrasing review:

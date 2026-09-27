@@ -4,7 +4,7 @@ description: >-
   what looks old. A fork that shadows a placed skill looks current and stays.
   A file the project wrote looks old and goes. A stale file answers the next
   agent plausibly and wrongly. This skill asks the agent to remove stale files
-  by the steps below, not by its own ideas.
+  by the steps below.
 ---
 
 Remove stale files:

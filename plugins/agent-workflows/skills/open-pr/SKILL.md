@@ -4,7 +4,7 @@ description: >-
   work grades it done. The self-graded work hides the gap between what was
   asked and what was built. The hidden gap reaches the person who reviews the
   pull request. This skill asks the agent to open a pull request by the steps
-  below, not by its own ideas.
+  below.
 ---
 
 Open a pull request:

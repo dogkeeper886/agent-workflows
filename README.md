@@ -1,109 +1,92 @@
 # agent-workflows
 
-You work with an agent in a Claude Code session, and a remark there — *the parser drops
-trailing commas* — becomes work that should end merged. Left to its own ideas, the agent
-rewrites the request in its own words, grades its own work done and reads *"merge it"* as
-approval, while the reasoning stays in a session nobody reads again. One piece of work has to
-get from a remark to merged without drifting from what was asked. This plugin carries it with
-four skills — `file-issue`, `do-task`, `open-pr` and `land-pr`, each stopping for a person —
-and eight more that report on it, gate what it produces and clean up after it, each a short
-list of steps a person can review.
+An agent carries a request from a Claude Code session to a merged pull request.
+The agent works by its own ideas: it rewrites the request in its own words, grades its
+own work done and reads *"merge it"* as approval. The merged work drifts from the
+request, and its reasoning stays behind in the session log. This plugin carries the
+request by four skills, `file-issue`, `do-task`, `open-pr` and `land-pr`, each a short
+list of steps that stops for a person.
 
-## Requirements
+## The four skills
 
-- [Claude Code](https://code.claude.com/docs) with plugin support
-- `gh` or `glab`, installed and authenticated. Every step that touches an issue or a pull
-  request goes through one of them
+The plugin carries the reasoning from one session to the next in the session log, which
+keeps how the agent read the request and thought it through. `file-issue` links the log
+to the issue. `do-task` reads it and starts with the whole reasoning, so you skip
+explaining, correcting and guiding it again. `open-pr` checks the work against your
+request in the log. `land-pr` merges only the commit you confirmed and deletes the
+branch, so the history stays clean.
+
+### file-issue
+
+`file-issue` turns a request into an issue with an SCQA intro. It copies the session log
+into `.sessions/` and links it from the intro, so the next agent reads the reasoning behind
+the request. It asks you first when the log holds a secret or private detail.
+
+    /agent-workflows:file-issue the parser drops trailing commas
+
+### do-task
+
+`do-task` reads the issue, its comments and its session log whole, then does the work and
+reports the outcome.
+
+    /agent-workflows:do-task 42
+
+### open-pr
+
+`open-pr` reviews the work against what the issue asked. A failed review stops it with a
+report; a passed review commits, pushes and opens the pull request with an SCQA intro.
+
+    /agent-workflows:open-pr
+
+### land-pr
+
+`land-pr` asks whether you reviewed and tested the pull request at its head commit, and
+merges that commit only on your yes. It then confirms the merge, closes the issue and
+deletes the branch.
+
+    /agent-workflows:land-pr 43
 
 ## Install
+
+The plugin installs from this repository, which is its own marketplace:
 
     /plugin marketplace add dogkeeper886/agent-workflows
     /plugin install agent-workflows@agent-workflows
 
-## Using it
+The plugin needs `gh` or `glab`, installed and authenticated, for every step that
+touches an issue or a pull request.
 
-Ask for what you want in your own words, or invoke a skill by name:
+## More skills
 
-    /agent-workflows:file-issue the parser drops trailing commas
-    /agent-workflows:do-task 42
+### Against drift
 
-The namespaced form always reaches the installed skill. A bare `/file-issue` reaches a local
-copy of that name when your project has one.
+The agent works by its own ideas, especially when it writes. Its report buries the
+verdict until it is worthless. Its comments drift from their lines until the next reader
+edits the logic wrongly. A skill written to hold the agent to a task drifts too, because
+the agent writes it by its own ideas, and the drift grows with every edit. These skills
+hold a report, a comment and a skill to a short list of steps a person can review.
 
-## How it works
+- `reporting-outcomes` opens every report with the verdict and ends it with one next
+  step, so you know what to do from the first line.
+- `reviewing-script-comments` rewrites a config file's comments as each value's options
+  or range, so you change a value without reading the program behind it.
+- `skill-structure` keeps a skill to one description and a list of steps, so you review
+  it in one read.
 
-![The spine: four skills from a remark to merged](docs/diagrams/png/01-the-spine.png)
+### Article writing
 
-The issue is the portal. `file-issue` opens it with an intro that follows the SCQA framework
-(situation, complication, question, answer) and links the session log it came from, so the
-agent that picks it up reads the reasoning, not only the request.
-`do-task` and `open-pr` read the issue and that log before anything else, and `land-pr`
-closes the issue when the merge did not.
+- `reviewing-phrasing` puts each sentence's main character first, so you read a document
+  once.
+- `reviewing-typography` makes a document's point stand out and stand alone, so you find
+  it at a glance.
+- `article-structure-study` lists an article's sections with each clause's main
+  character and action, so you see its structure in one page.
 
-**`open-pr` is the gate.** The agent that wrote the work does not grade it done: `open-pr`
-reviews the work against what the issue asked, and a failed review stops and reports
-instead of opening the pull request. `land-pr` then asks whether you reviewed and tested
-the pull request at its head, and merges only that commit.
+### Other
 
-**The toolkit keeps no state of its own.** No story file, no plan file, no index. The
-issue, the branch and the pull request live on the platform, which is the one place both a
-person and an agent can read.
-
-## The skills
-
-### The spine
-
-| Skill | What it does |
-|---|---|
-| [file-issue](plugins/agent-workflows/skills/file-issue/SKILL.md) | Files an issue with an intro that follows the SCQA framework and links the session log behind it, asking first when the log holds a secret |
-| [do-task](plugins/agent-workflows/skills/do-task/SKILL.md) | Reads the issue, its comments and its session log whole, then does the work |
-| [open-pr](plugins/agent-workflows/skills/open-pr/SKILL.md) | Reviews the work against what the issue asked, and opens the pull request only when the review passes |
-| [land-pr](plugins/agent-workflows/skills/land-pr/SKILL.md) | Merges pinned to the head a person says they reviewed and tested, closes the issue and deletes the branch |
-
-### Around it
-
-| Skill | What it does |
-|---|---|
-| [gen-readme](plugins/agent-workflows/skills/gen-readme/SKILL.md) | Writes a README from the code, with one rendered diagram per key point |
-| [review-readme](plugins/agent-workflows/skills/review-readme/SKILL.md) | Gates a README on three counts: useful to a newcomer, true to the code, and readable |
-| [skill-structure](plugins/agent-workflows/skills/skill-structure/SKILL.md) | Writes a skill as one description paragraph, a header and a list of steps |
-| [reviewing-phrasing](plugins/agent-workflows/skills/reviewing-phrasing/SKILL.md) | Reviews a document's phrasing by fixed steps: a Markdown file with the title and a list of sentences, each tic, filler, loose phrase, negative and buried main character struck through and rewritten |
-| [reviewing-typography](plugins/agent-workflows/skills/reviewing-typography/SKILL.md) | Reviews how a document looks by fixed steps: the point stands out and stands alone, from the title down to the clause |
-| [reporting-outcomes](plugins/agent-workflows/skills/reporting-outcomes/SKILL.md) | Opens every report with the verdict and ends it with one next step |
-| [remove-stale-files](plugins/agent-workflows/skills/remove-stale-files/SKILL.md) | Deletes what earlier versions of this plugin left behind, and the forks that shadow it |
-| [article-structure-study](plugins/agent-workflows/skills/article-structure-study/SKILL.md) | Studies an article's structure by fixed steps: a Markdown file with the title and a list of sections, each clause's main character bolded and its action in a code span |
-
-## This repo is its own marketplace
-
-![The repo hosts the plugin it develops; a directory source loads the working tree](docs/diagrams/png/03-its-own-marketplace.png)
-
-The skills are developed in the same tree that serves them, so they are used the way they
-ship. If you are working on the plugin, add this directory as the marketplace source and
-restart the session to load an edit — including one you have not committed yet.
-
-## Session logs
-
-`.sessions/` holds the raw agent transcripts, copied out of `~/.claude/projects/` and
-linked from the issues they led to. A secret or private detail is masked only after the
-user is asked, and nothing else is changed. A log informs; it never binds. The code binds on what is
-true now, the issue binds on what a change may touch, and a log that seems to forbid
-something is only a previous session's situation.
-
-## Contributing
-
-`skill-structure` shapes a skill, `reviewing-phrasing` and `reviewing-typography` gate a
-document. By convention both are run on this repo's own files before they land; nothing
-enforces it. Diagrams are SVG sources committed alongside PNGs rendered by an explicit
-command, `rsvg-convert` by default:
-
-    rsvg-convert -z 2 docs/diagrams/<name>.svg -o docs/diagrams/png/<name>.png
-
-Renaming a skill leaves citations behind in the other eleven, in both manifests and in
-this file. Check them before opening a pull request:
-
-    scripts/check-names.sh
-
-## License
-
-MIT, as declared in
-[plugin.json](plugins/agent-workflows/.claude-plugin/plugin.json).
+- `gen-readme` writes a README from the code with an SCQA opening, so a newcomer gets the
+  point from the first paragraph.
+- `review-readme` checks a README against the code, so the README you ship matches what
+  it describes.
+- `remove-stale-files` deletes what earlier versions of this plugin left behind, so an
+  old file stops answering the next agent.
