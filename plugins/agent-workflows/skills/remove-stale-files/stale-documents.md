@@ -52,5 +52,5 @@ Leave every other section. A project's coding guidelines are not this plugin's b
 
 ## Never
 
-`docs/adr/` and `docs/diagrams/`. ADRs are the project's record of its own decisions, and
-diagrams are `gen-readme`'s current output. Neither is stale by being old.
+`docs/adr/`. ADRs are the project's record of its own decisions, and stay current however
+old they are.
