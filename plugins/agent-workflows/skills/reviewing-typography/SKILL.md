@@ -2,9 +2,9 @@
 description: >-
   An agent reviews how a document looks by its own ideas. The agent formats
   section by section, adding bold and headings where each seems needed. Even
-  spacing merges the groups, and bold on every line marks nothing. The reader
-  cannot find the point without reading everything. This skill asks the agent
-  to review how a document looks by the steps below, not by its own ideas.
+  spacing merges the groups, and bold on every line weighs every line the
+  same. The reader reads everything to find the point. This skill asks the
+  agent to review how a document looks by the steps below.
 ---
 
 Review how a document looks:

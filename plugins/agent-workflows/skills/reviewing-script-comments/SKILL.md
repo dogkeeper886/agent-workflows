@@ -6,7 +6,7 @@ description: >-
   edits in the wrong direction. A value lives in a config file only because it
   can change, so the reader needs each option and its range, not a description
   of the line. This skill asks the agent to review a config file's comments by
-  the steps below, not by its own ideas.
+  the steps below.
 ---
 
 Config comment review:

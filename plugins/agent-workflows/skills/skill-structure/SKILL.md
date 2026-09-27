@@ -5,7 +5,7 @@ description: >-
   grow with every edit. The grown words pass what a human can review. The
   number of skills multiplies the growth. The unreviewed skill drifts from its
   purpose, then turns useless. This skill asks the agent to write a skill by
-  the steps below, not by its own ideas.
+  the steps below.
 ---
 
 Skill structure:

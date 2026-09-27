@@ -5,8 +5,7 @@ description: >-
   notices. The shifted issue drops the reasoning behind it. A cold agent
   picks the issue up and builds the shifted intent. The session log that
   carries the reasoning can also carry a secret into a public repository. This
-  skill asks the agent to file an issue by the steps below, not by its own
-  ideas.
+  skill asks the agent to file an issue by the steps below.
 ---
 
 File an issue:

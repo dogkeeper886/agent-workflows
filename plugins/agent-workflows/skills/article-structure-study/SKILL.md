@@ -4,8 +4,7 @@ description: >-
   The file syntax takes parsing that breaks the agent's focus
   within a few rounds of request and response. The agent's broken focus lets
   the article drift further from the user's request every round. This skill
-  asks the agent to study an article's structure by the steps below, not by its
-  own ideas.
+  asks the agent to study an article's structure by the steps below.
 ---
 
 Article structure study:

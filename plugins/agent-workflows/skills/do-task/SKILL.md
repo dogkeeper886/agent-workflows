@@ -1,9 +1,8 @@
 ---
 description: >-
   An agent works an issue by its own ideas. The agent starts before it reads
-  the issue whole. The work reaches review in a state nobody named. This
-  skill asks the agent to work an issue by the steps below, not by its own
-  ideas.
+  the issue whole. The work reaches review in a state the reviewer has to
+  guess. This skill asks the agent to work an issue by the steps below.
 ---
 
 Work an issue:
