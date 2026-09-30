@@ -60,18 +60,23 @@ touches an issue or a pull request.
 
 ### Against drift
 
-The agent works by its own ideas, especially when it writes. Its report buries the
-verdict until it is worthless. Its comments drift from their lines until the next reader
-edits the logic wrongly. A skill written to hold the agent to a task drifts too, because
-the agent writes it by its own ideas, and the drift grows with every edit. These skills
-hold a report, a comment and a skill to a short list of steps a person can review.
+The agent works by its own ideas, especially when it writes. Its comments drift from
+their lines until the next reader edits the logic wrongly. A skill written to hold the
+agent to a task drifts too, because the agent writes it by its own ideas, and the drift
+grows with every edit. These skills hold a comment and a skill to a short list of steps a
+person can review.
 
-- `reporting-outcomes` opens every report with the verdict and ends it with one next
-  step, so you know what to do from the first line.
 - `reviewing-script-comments` rewrites a config file's comments as each value's options
   or range, so you change a value without reading the program behind it.
 - `skill-structure` keeps a skill to one description and a list of steps, so you review
   it in one read.
+
+### Reporting
+
+- `reporting-outcomes` opens every report with the verdict and ends it with one next
+  step, so you know what to do from the first line.
+- `drawing-diagrams` redraws the previous response as ASCII diagrams, so you see a
+  branch, a loop or a blocked step at a glance.
 
 ### Article writing
 
