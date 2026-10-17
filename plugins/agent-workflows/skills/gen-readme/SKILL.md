@@ -12,6 +12,6 @@ Write a README:
 2. Open the README with an SCQA opening structure: {context the reader already agrees with}. {the change that disrupts it}. {the issue it raises, stated or as its consequence}. {what resolves it}.
 3. Give the answer's main character the first section, and open it with how the answer resolves the issue.
 4. Give each side answer's main character the second, third and each later section, in the order the reader needs them, and open a section with its own SCQA opening structure when it resolves a different issue.
-5. Review the words with the `reviewing-phrasing` skill.
+5. Review the words with the `rewrite-phrasing` skill.
 6. Review the look with the `reviewing-typography` skill.
 7. Report with the `reporting-outcomes` skill.

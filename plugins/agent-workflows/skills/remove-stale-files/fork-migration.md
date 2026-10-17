@@ -18,14 +18,16 @@ which copy ran.
 | `doc-gen-readme` | `gen-readme` |
 | `doc-review-readme` | `review-readme` |
 | `auditing-artifacts`, `reviewing-artifacts` | `skill-structure` |
-| `auditing-readme` | `reviewing-phrasing`, `reviewing-typography` |
+| `auditing-readme` | `rewrite-phrasing`, `reviewing-typography` |
+| `reviewing-phrasing` | `rewrite-phrasing` |
+| `article-structure-study` | `studying-phrasing` |
 | `qw-plan`, `qw-cases`, `qw-review-plan`, `qw-review-cases` | `qa-*` in `agent-workflows-runner`, **placed separately** |
 
 ## Shadowing: delete the fork, the placed one is the same job
 
 A local copy of any name this plugin ships now: `file-issue`, `do-task`, `open-pr`,
 `land-pr`, `gen-readme`, `review-readme`,
-`skill-structure`, `reviewing-phrasing`, `reviewing-typography`,
+`skill-structure`, `rewrite-phrasing`, `studying-phrasing`, `reviewing-typography`,
 `reporting-outcomes`, `remove-stale-files`.
 
 ## Retired: nothing replaces these

@@ -80,12 +80,12 @@ person can review.
 
 ### Article writing
 
-- `reviewing-phrasing` puts each sentence's main character first, so you read a document
+- `rewrite-phrasing` puts each sentence's main character first, so you read a document
   once.
 - `reviewing-typography` makes a document's point stand out and stand alone, so you find
   it at a glance.
-- `article-structure-study` lists an article's sections with each clause's main
-  character and action, so you see its structure in one page.
+- `studying-phrasing` marks each sentence's subject, action, bloat, negatives and hidden
+  actions, then rewrites them, so you see why each sentence changed.
 
 ### Other
 

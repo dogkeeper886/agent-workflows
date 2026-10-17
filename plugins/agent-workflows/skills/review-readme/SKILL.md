@@ -13,6 +13,6 @@ Review a README:
 3. Compare the whole README with the scratchpad file.
 4. Stop and report with the `reporting-outcomes` skill when the drift is high.
 5. Save a revise evaluation in the scratchpad file when the drift is low.
-6. Review the words with the `reviewing-phrasing` skill.
+6. Review the words with the `rewrite-phrasing` skill.
 7. Review the look with the `reviewing-typography` skill.
 8. Report with the `reporting-outcomes` skill, including the saved evaluation.
