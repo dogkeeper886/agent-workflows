@@ -10,6 +10,6 @@ description: >-
 
 File an issue:
 1. Open the issue with an SCQA opening structure: {context the reader already agrees with}. {the change that disrupts it}. {the issue it raises, stated or as its consequence}. {what resolves it}.
-2. When the session log holds a secret or private info, stop and ask the user.
-3. Copy the session log raw into .sessions/ and link it from the intro, so the next agent reads the context behind it.
-4. Show the user the intro and the link to the issue.
+2. Rewrite the step 1 result with the `rewrite-phrasing` skill.
+3. Link the session log to the issue, uploaded to an issue comment or the repo's .sessions/ when possible. When an action on the log is blocked, skip the log if the task can finish in the current session, and tell the user if the task needs to cross sessions.
+4. Ensure the created issue holds only one section, the step 2 result.
