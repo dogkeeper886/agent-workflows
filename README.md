@@ -18,9 +18,11 @@ branch, so the history stays clean.
 
 ### file-issue
 
-`file-issue` turns a request into an issue with an SCQA intro. It copies the session log
-into `.sessions/` and links it from the intro, so the next agent reads the reasoning behind
-the request. It asks you first when the log holds a secret or private detail.
+`file-issue` turns a request into an issue whose body is one SCQA intro, rewritten with
+`rewrite-phrasing`. It links the session log in an issue comment or in `.sessions/`, so the
+next agent reads the reasoning behind the request. When the upload is blocked, it skips the
+log for a task that finishes in this session, and tells you when the task needs another
+session.
 
     /agent-workflows:file-issue the parser drops trailing commas
 
