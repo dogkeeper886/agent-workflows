@@ -5,7 +5,7 @@
 # README, and each one reads correctly on its own, so nothing catches them by
 # eye. This does.
 #
-# Usage:  scripts/check-names.sh            # both marketplaces, the README, CLAUDE.md
+# Usage:  scripts/check-names.sh            # the plugin, the README, CLAUDE.md
 #         scripts/check-names.sh <path>     # one file or directory
 #
 # Exit 0 = clean, 1 = at least one citation that does not resolve.
@@ -49,7 +49,7 @@ rsvg-convert             an external command
 if [ $# -gt 0 ]; then
   TARGETS="$1"
 else
-  TARGETS="$ROOT/plugins $ROOT/.claude-plugin $ROOT/.cursor-plugin $ROOT/README.md $ROOT/CLAUDE.md"
+  TARGETS="$ROOT/plugins $ROOT/.claude-plugin $ROOT/README.md $ROOT/CLAUDE.md"
 fi
 
 HITS=$(mktemp)
@@ -58,9 +58,7 @@ trap 'rm -f "$HITS"' EXIT
 # Names that resolve: a skill directory, or a plugin in the marketplace.
 VALID=$(
   ls "$SKILLS"
-  sed -n 's/.*"name": "\([a-z0-9-]*\)".*/\1/p' \
-    "$ROOT/.claude-plugin/marketplace.json" \
-    "$ROOT/.cursor-plugin/marketplace.json"
+  sed -n 's/.*"name": "\([a-z0-9-]*\)".*/\1/p' "$ROOT/.claude-plugin/marketplace.json"
 )
 
 # -H so a single-file target still prints its path; -P for the lookaround that
