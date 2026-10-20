@@ -1,0 +1,18 @@
+{
+  "name": "agent-workflows",
+  "owner": {
+    "name": "dogkeeper886"
+  },
+  "metadata": {
+    "description": "This repository is its own marketplace: it hosts the agent-workflows plugin from the same tree it develops it in, so the placed copy and the tested copy are one thing."
+  },
+  "plugins": [
+    {
+      "name": "agent-workflows",
+      "description": "Carries one piece of work from a remark in a session to merged: file the issue, do the work, review it and open the pull request, land it. Every step stops for a person, and the same gates cover READMEs. Needs `gh` or `glab`, authenticated.",
+      "source": "./plugins/agent-workflows",
+      "category": "workflow",
+      "homepage": "https://github.com/dogkeeper886/agent-workflows"
+    }
+  ]
+}
