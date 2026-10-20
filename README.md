@@ -55,6 +55,11 @@ The plugin installs from this repository, which is its own marketplace:
     /plugin marketplace add dogkeeper886/agent-workflows
     /plugin install agent-workflows@agent-workflows
 
+Cursor loads the same plugin from `.cursor-plugin/` beside `.claude-plugin/`.
+The Claude Code commands above still read `.claude-plugin/`. Add this repository
+as a marketplace in Customize, then install `agent-workflows`. A Cursor skill
+runs as `/file-issue`.
+
 The plugin needs `gh` or `glab`, installed and authenticated, for every step that
 touches an issue or a pull request.
 

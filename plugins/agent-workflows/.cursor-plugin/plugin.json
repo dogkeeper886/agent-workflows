@@ -1,0 +1,10 @@
+{
+  "name": "agent-workflows",
+  "description": "Carries one piece of work from a remark in a session to merged: file the issue, do the work, review it and open the pull request, land it. Needs `gh` or `glab`, authenticated.",
+  "author": {
+    "name": "dogkeeper886"
+  },
+  "homepage": "https://github.com/dogkeeper886/agent-workflows",
+  "repository": "https://github.com/dogkeeper886/agent-workflows",
+  "license": "MIT"
+}
