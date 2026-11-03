@@ -21,10 +21,10 @@ branch, so the history stays clean.
 ### file-issue
 
 `file-issue` turns a request into an issue whose body is one SCQA intro, rewritten with
-`rewrite-phrasing`. It links the session log in an issue comment or in `.sessions/`, so the
-next agent reads the reasoning behind the request. When the upload is blocked, it skips the
-log for a task that finishes in this session, and tells you when the task needs another
-session.
+`rewrite-phrasing`. It copies the session log, secrets masked, into the repo's git-ignored
+`.sessions/` and names the copy in an issue comment, so the next agent on this machine reads
+the reasoning behind the request. When an action on the log is blocked, it skips the log for
+a task that finishes in this session, and tells you when the task needs another session.
 
     /agent-workflows:file-issue the parser drops trailing commas
 
