@@ -1,2 +1,5 @@
 # Personal Claude Code settings — not shared
 .claude/settings.local.json
+
+# Session logs stay on this machine
+.sessions/
