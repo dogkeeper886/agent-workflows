@@ -88,6 +88,9 @@ person can review.
   it at a glance.
 - `studying-phrasing` marks each sentence's subject, action, bloat, negatives and hidden
   actions, then rewrites them, so you see why each sentence changed.
+- `rendering-diagrams` draws each section past 111 words about a process, a structure or
+  relationships as an SVG, and links its PNG under the section's first paragraph, so you
+  see the shape before you read the words.
 
 ### Other
 
