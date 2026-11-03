@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="330" viewBox="0 0 1300 330" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#44546a"/>
+    </marker>
+  </defs>
+  <rect width="1300" height="330" fill="#ffffff"/>
+
+  <!-- column headers -->
+  <text x="20" y="28" font-size="13" font-weight="bold" fill="#c5221f">the drift</text>
+  <text x="830" y="28" font-size="13" font-weight="bold" fill="#188038">the fix: a short list of steps a person can review</text>
+  <line x1="790" y1="14" x2="790" y2="316" stroke="#9aa5b1" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <!-- root -->
+  <rect x="20" y="140" width="170" height="60" rx="8" fill="#f5f7fa" stroke="#44546a" stroke-width="1.5"/>
+  <text x="105" y="166" text-anchor="middle" font-size="14" fill="#1f2937">the agent works</text>
+  <text x="105" y="184" text-anchor="middle" font-size="14" fill="#1f2937">by its own ideas</text>
+
+  <!-- lane 1: comments -->
+  <rect x="270" y="50" width="200" height="56" rx="8" fill="#fdecea" stroke="#c5221f" stroke-width="1.5"/>
+  <text x="370" y="74" text-anchor="middle" font-size="14" fill="#1f2937">comments drift</text>
+  <text x="370" y="92" text-anchor="middle" font-size="14" fill="#1f2937">from their lines</text>
+
+  <rect x="550" y="50" width="200" height="56" rx="8" fill="#fdecea" stroke="#c5221f" stroke-width="1.5"/>
+  <text x="650" y="74" text-anchor="middle" font-size="14" fill="#1f2937">the next reader edits</text>
+  <text x="650" y="92" text-anchor="middle" font-size="14" fill="#1f2937">the logic wrongly</text>
+
+  <rect x="830" y="50" width="220" height="56" rx="8" fill="#e8f0fe" stroke="#1a73e8" stroke-width="1.5"/>
+  <text x="940" y="74" text-anchor="middle" font-size="13" font-family="Menlo, Consolas, monospace" fill="#1f2937">reviewing-script-comments</text>
+  <text x="940" y="93" text-anchor="middle" font-size="12" fill="#374151">comments as options or range</text>
+
+  <rect x="1090" y="50" width="190" height="56" rx="8" fill="#e6f4ea" stroke="#188038" stroke-width="1.5"/>
+  <text x="1185" y="74" text-anchor="middle" font-size="13" fill="#1f2937">you change a value</text>
+  <text x="1185" y="92" text-anchor="middle" font-size="13" fill="#1f2937">without the program</text>
+
+  <!-- lane 2: skills -->
+  <rect x="270" y="234" width="200" height="56" rx="8" fill="#fdecea" stroke="#c5221f" stroke-width="1.5"/>
+  <text x="370" y="267" text-anchor="middle" font-size="14" fill="#1f2937">a skill drifts</text>
+
+  <rect x="550" y="234" width="200" height="56" rx="8" fill="#fdecea" stroke="#c5221f" stroke-width="1.5"/>
+  <text x="650" y="267" text-anchor="middle" font-size="14" fill="#1f2937">the drift grows</text>
+
+  <rect x="830" y="234" width="220" height="56" rx="8" fill="#e8f0fe" stroke="#1a73e8" stroke-width="1.5"/>
+  <text x="940" y="258" text-anchor="middle" font-size="13" font-family="Menlo, Consolas, monospace" fill="#1f2937">skill-structure</text>
+  <text x="940" y="277" text-anchor="middle" font-size="12" fill="#374151">one description, a list of steps</text>
+
+  <rect x="1090" y="234" width="190" height="56" rx="8" fill="#e6f4ea" stroke="#188038" stroke-width="1.5"/>
+  <text x="1185" y="258" text-anchor="middle" font-size="13" fill="#1f2937">you review it</text>
+  <text x="1185" y="276" text-anchor="middle" font-size="13" fill="#1f2937">in one read</text>
+
+  <!-- arrows: drift -->
+  <line x1="190" y1="155" x2="268" y2="92" stroke="#44546a" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="222" y="118" text-anchor="end" font-size="12" fill="#374151">writes comments</text>
+  <line x1="190" y1="185" x2="268" y2="248" stroke="#44546a" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="222" y="234" text-anchor="end" font-size="12" fill="#374151">writes a skill</text>
+  <line x1="470" y1="78" x2="548" y2="78" stroke="#44546a" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="509" y="70" text-anchor="middle" font-size="12" fill="#374151">until</text>
+  <line x1="470" y1="262" x2="548" y2="262" stroke="#44546a" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="509" y="254" text-anchor="middle" font-size="12" fill="#374151">every edit</text>
+
+  <!-- arrows: fix -->
+  <line x1="1050" y1="78" x2="1088" y2="78" stroke="#44546a" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="1069" y="70" text-anchor="middle" font-size="12" fill="#374151">so</text>
+  <line x1="1050" y1="262" x2="1088" y2="262" stroke="#44546a" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="1069" y="254" text-anchor="middle" font-size="12" fill="#374151">so</text>
+</svg>

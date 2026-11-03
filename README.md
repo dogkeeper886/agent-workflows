@@ -16,6 +16,8 @@ explaining, correcting and guiding it again. `open-pr` checks the work against y
 request in the log. `land-pr` merges only the commit you confirmed and deletes the
 branch, so the history stays clean.
 
+![The four skills: file-issue, do-task, open-pr and land-pr carry your request through the session log to a merge](docs/diagrams/png/the-four-skills.png)
+
 ### file-issue
 
 `file-issue` turns a request into an issue whose body is one SCQA intro, rewritten with
@@ -68,6 +70,8 @@ agent to a task drifts too, because the agent writes it by its own ideas, and th
 grows with every edit. These skills hold a comment and a skill to a short list of steps a
 person can review.
 
+![Against drift: comments and skills drift when the agent works by its own ideas, and reviewing-script-comments and skill-structure hold them to a short list of steps](docs/diagrams/png/against-drift.png)
+
 - `reviewing-script-comments` rewrites a config file's comments as each value's options
   or range, so you change a value without reading the program behind it.
 - `skill-structure` keeps a skill to one description and a list of steps, so you review
@@ -88,6 +92,9 @@ person can review.
   it at a glance.
 - `studying-phrasing` marks each sentence's subject, action, bloat, negatives and hidden
   actions, then rewrites them, so you see why each sentence changed.
+- `rendering-diagrams` draws each section past 111 words about a process, a structure or
+  relationships as an SVG, and links its PNG under the section's first paragraph, so you
+  see the shape before you read the words.
 
 ### Other
 
