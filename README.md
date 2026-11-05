@@ -81,7 +81,7 @@ person can review.
 
 - `reporting-outcomes` opens every report with the verdict and ends it with one next
   step, so you know what to do from the first line.
-- `drawing-diagrams` redraws the previous response as ASCII diagrams, so you see a
+- `draw-ascii-diagrams` redraws the previous response as ASCII diagrams, so you see a
   branch, a loop or a blocked step at a glance.
 
 ### Article writing
@@ -92,9 +92,9 @@ person can review.
   it at a glance.
 - `studying-phrasing` marks each sentence's subject, action, bloat, negatives and hidden
   actions, then rewrites them, so you see why each sentence changed.
-- `rendering-diagrams` draws each section past 111 words about a process, a structure or
-  relationships as an SVG, and links its PNG under the section's first paragraph, so you
-  see the shape before you read the words.
+- `draw-svg-diagrams` draws each section past 111 words about a process, a structure
+  or relationships as an SVG, and links its PNG under the section's first paragraph, so
+  you see the shape before you read the words.
 
 ### Other
 
