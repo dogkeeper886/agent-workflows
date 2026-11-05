@@ -13,6 +13,6 @@ Write a README:
 3. Give the answer's main character the first section, and open it with how the answer resolves the issue.
 4. Give each side answer's main character the second, third and each later section, in the order the reader needs them, and open a section with its own SCQA opening structure when it resolves a different issue.
 5. Review the words with the `rewrite-phrasing` skill.
-6. Draw the diagrams with the `rendering-diagrams` skill.
+6. Draw the diagrams with the `draw-svg-diagrams` skill.
 7. Review the look with the `reviewing-typography` skill.
 8. Report with the `reporting-outcomes` skill.

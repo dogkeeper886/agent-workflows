@@ -14,6 +14,6 @@ Review a README:
 4. Stop and report with the `reporting-outcomes` skill when the drift is high.
 5. Save a revise evaluation in the scratchpad file when the drift is low.
 6. Review the words with the `rewrite-phrasing` skill.
-7. Draw the diagrams with the `rendering-diagrams` skill.
+7. Draw the diagrams with the `draw-svg-diagrams` skill.
 8. Review the look with the `reviewing-typography` skill.
 9. Report with the `reporting-outcomes` skill, including the saved evaluation.

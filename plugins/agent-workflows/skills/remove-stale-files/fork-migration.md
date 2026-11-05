@@ -21,6 +21,8 @@ which copy ran.
 | `auditing-readme` | `rewrite-phrasing`, `reviewing-typography` |
 | `reviewing-phrasing` | `rewrite-phrasing` |
 | `article-structure-study` | `studying-phrasing` |
+| `drawing-diagrams` | `draw-ascii-diagrams` |
+| `rendering-diagrams` | `draw-svg-diagrams` |
 | `qw-plan`, `qw-cases`, `qw-review-plan`, `qw-review-cases` | `qa-*` in `agent-workflows-runner`, **placed separately** |
 
 ## Shadowing: delete the fork, the placed one is the same job
