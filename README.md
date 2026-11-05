@@ -105,5 +105,7 @@ person can review.
 - `write-release-notes` writes a release's notes as what the current version does, what
   will become a problem, what it costs and what the release provides, so a user knows
   from the first paragraph why to upgrade.
+- `outline-test-cases` draws the user's session from a repo's code as a decision tree and
+  writes its suites and case names, so you review what to test before any script exists.
 - `remove-stale-files` deletes what earlier versions of this plugin left behind, so an
   old file stops answering the next agent.
