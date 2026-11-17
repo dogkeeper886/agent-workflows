@@ -107,5 +107,7 @@ person can review.
   from the first paragraph why to upgrade.
 - `outline-test-cases` draws the user's session from a repo's code as a decision tree and
   writes its suites and case names, so you review what to test before any script exists.
+- `design-visual-flow` layers a visual's facts from a glance to detail and folds what is
+  fine into counts, so the glance shows you only the problems.
 - `remove-stale-files` deletes what earlier versions of this plugin left behind, so an
   old file stops answering the next agent.
